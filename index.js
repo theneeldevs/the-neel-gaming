@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const prefix = "tn+";
+const prefix = "t+";
 
 const client = new Discord.Client();
 
@@ -155,7 +155,7 @@ client.on("message", msg => {
 
   }
 
-  if (msg.content.toLowerCase().startsWith(prefix + "purge")) {
+  if (msg.content.toLowerCase().startsWith(prefix + "clr")) {
 
     const mc = msg.content.split(" ")[1];
 
